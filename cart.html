@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart - RuShu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="Image/logo.png" alt="logo" /> </a>
+
+      <div>
+        <ul id="navbar">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/shop.html">Shop</a></li>
+          <li><a href="/Blog.html">Blog</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contactus.html">Contact</a></li>
+          <li>
+            <a href="/cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+          <a href="#" id="close"><i class="fa-solid fa-folder-closed"></i></a>
+        </ul>
+      </div>
+      <div class="mobile">
+        <a href="/cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fa-solid fa-outdent"></i>
+      </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+      <h2>#Let's_talk</h2>
+      <p>LEAVE A MESSAGE, We love to hear from you .</p>
+    </section>
+
+    <section id="cart-container" class="section-p1">
+      <div id="selected-product">
+        <!-- Product information will be dynamically inserted here -->
+      </div>
+
+      <div id="cart-form-container">
+        <h2>Complete Your Order</h2>
+        <form id="cart-form">
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Home Address:</label>
+            <textarea id="address" name="address" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="product">Product Name:</label>
+            <input type="text" id="product" name="product" readonly>
+          </div>
+          <div class="form-group">
+            <label for="size">Product Size:</label>
+            <select id="size" name="size" required>
+              <option value="">Select Size</option>
+              <option value="S">Small</option>
+              <option value="M">Medium</option>
+              <option value="L">Large</option>
+              <option value="XL">Extra Large</option>
+            </select>
+          </div>
+          <button type="submit" class="normal">Place Order</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+      </div>
+      <div class="form">
+        <form id="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button class="normal">Sign Up</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="Image/logo.png" alt="cara online shop" />
+        <h4>Contact</h4>
+        <p>
+          <strong>Address:</strong> Hateerjhel road West Ulon, Rampura, Dhaka
+          Francisco
+        </p>
+        <p><strong>Phone:</strong> +880 1576542799 +880 1600146594</p>
+        <p><strong>Hour:</strong> 10:00 - 18:00 , Mon - Sat</p>
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Informtion</a>
+        <a href="#">privacy Policy</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My WishList</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App or Google Play</p>
+        <div class="row">
+          <img src="Image/pay/app 1.jpg" alt="app store" />
+          <img src="Image/pay/play.jpg" alt="play store" />
+        </div>
+        <p>From App or Google Play</p>
+        <img src="Image/pay/pay.png" alt="" />
+      </div>
+      <div class="copyright">
+        <p>@22025.Tech2 etc -HTML CSS Ecomerce Template</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Function to get URL parameters
+      function getUrlParams() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+          product: params.get('product'),
+          name: params.get('name')
+        };
+      }
+
+      // Function to display selected product
+      function displaySelectedProduct() {
+        const params = getUrlParams();
+        const selectedProductDiv = document.getElementById('selected-product');
+        const productInput = document.getElementById('product');
+
+        if (params.product && params.name) {
+          selectedProductDiv.innerHTML = `
+            <div class="selected-product">
+              <img src="Image/product/${params.product}" alt="${params.name}">
+              <div class="product-details">
+                <h3>${params.name}</h3>
+              </div>
+            </div>
+          `;
+          productInput.value = params.name;
+        }
+      }
+
+      // Call the function when the page loads
+      window.onload = displaySelectedProduct;
+    </script>
+  </body>
+</html>
