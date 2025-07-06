@@ -714,53 +714,79 @@ footer .copyright {
   border-radius: 20px;
 }
 
-/* contact page */
+/* ===============================
+   Contact Page - RuShu Website
+   =============================== */
+
+/* Contact Details Section */
 #contact-details {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 #contact-details .details {
   width: 40%;
 }
-#contact-details .details SPAN,
-#from-details form span {
+
+#contact-details .details span,
+#form-details form span {
   font-size: 12px;
+  text-transform: uppercase;
+  color: #555;
 }
+
 #contact-details .details h2,
-#from-details form h2 {
+#form-details form h2 {
   font-size: 26px;
   line-height: 35px;
   padding: 20px 0;
 }
+
 #contact-details .details h3 {
   font-size: 16px;
   padding-bottom: 15px;
 }
 
+#contact-details .details ul {
+  padding: 0;
+  margin: 0;
+}
+
 #contact-details .details li {
   list-style: none;
   display: flex;
+  align-items: flex-start;
   padding: 10px 0;
 }
+
 #contact-details .details li i {
   font-size: 14px;
-  padding-right: 22px;
+  padding-right: 15px;
+  color: #088178;
+  min-width: 20px;
 }
+
 #contact-details .details li p {
   margin: 0;
   font-size: 14px;
+  color: #333;
 }
+
+/* Google Map */
 #contact-details .map {
   width: 55%;
   height: 400px;
 }
+
 #contact-details .map iframe {
   width: 100%;
   height: 100%;
+  border: none;
 }
-/* Contact form section layout */
-#from-details {
+
+/* Contact Form Section */
+#form-details {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -768,63 +794,72 @@ footer .copyright {
   margin: 30px;
   padding: 80px;
   border: 1px solid #e1e1e1;
+  background-color: #f9f9f9;
 }
 
-/* Left form side */
-#from-details form {
+/* Contact Form (Left Side) */
+#form-details form {
   width: 65%;
   display: flex;
   flex-direction: column;
 }
 
-#from-details form input,
-#from-details form textarea {
+#form-details form input,
+#form-details form textarea {
   width: 100%;
   padding: 12px 15px;
   margin-bottom: 20px;
   border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: vertical;
   outline: none;
 }
 
-#from-details form button {
+#form-details form button {
   background-color: #088178;
   color: #fff;
   padding: 12px 25px;
   border: none;
   cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
-/* Right people side */
+#form-details form button:hover {
+  background-color: #066c65;
+}
+
+/* People List (Right Side) */
 .people-list {
   width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertically center people block */
+  justify-content: center;
   gap: 30px;
 }
 
-/* Individual person */
+/* Each Person */
 .people {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-/* from details */
 .people img {
   width: 80px;
   height: 80px;
-  border-radius: 50%; /* Makes image round */
+  border-radius: 50%;
   object-fit: cover;
-  object-position: top; /* Focus on top (head/chest) */
-  border: 2px solid #ccc; /* Optional: neat border */
+  object-position: top;
+  border: 2px solid #ccc;
 }
 
-/* Text styles */
 .people p {
   margin: 0;
   font-size: 13px;
   line-height: 20px;
+  color: #333;
 }
 
 .people span {
@@ -839,7 +874,7 @@ footer .copyright {
   .section-p1 {
     padding: 40px 40px;
   }
-  
+
   #navbar {
     display: flex;
     flex-direction: column;
