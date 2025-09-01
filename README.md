@@ -13,6 +13,7 @@
 - [Why It Matters](#why-it-matters)
 - [Site Structure](#site-structure)
 - [How to Preview Locally](#how-to-preview-locally)
+- [Live Preview](#live-preview)
 - [Project Vision](#project-vision)
 - [Contribute](#contribute)
 - [License & Badges](#license--badges)
@@ -52,14 +53,14 @@ Cara offers a premium online shopping experience with a sleek, minimalist design
 ## Site Structure
 
 /
-├── index.html — Home page
-├── shop.html — Browse products
-├── product.html — Product detail page
-├── blog.html — Fashion articles & tips
-├── about.html — Brand story & sustainability
-├── contact.html — Customer inquiries form
-├── img/ — Images and assets (e.g., banner, product photos)
-├── styles.css — Styling and layout rules
+├── index.html — Home page  
+├── shop.html — Browse products  
+├── product.html — Product detail page  
+├── blog.html — Fashion articles & tips  
+├── about.html — Brand story & sustainability  
+├── contact.html — Customer inquiries form  
+├── img/ — Images and assets (e.g., banner, product photos)  
+├── styles.css — Styling and layout rules  
 └── script.js — Interactive behaviors (e.g., mobile navigation, product image updates)
 
 ---
@@ -73,27 +74,28 @@ Cara offers a premium online shopping experience with a sleek, minimalist design
    Open index.html in your browser to start exploring the site.
    ```
 
-Run a local server for advanced features like contact form validation or future enhancements:
+For advanced features like form validation or future enhancements, you can run a local server.
 
-<h1>Live Preview:</h1>
+Live Preview
+🚀 Experience Cara Online Shop directly here:
+👉
 
-# Visit:
-
-\*project Vision
+Project Vision
 Cara aims to:
 
-1.  Empower learners in front-end design and development.
+Empower learners in front-end design and development.
 
-2.  Serve as a sleek foundation for full-fledged e-commerce features.
+Serve as a sleek foundation for full-fledged e-commerce features.
 
-3.  Showcase modern, user-friendly fashion website design standards.
+Showcase modern, user-friendly fashion website design standards.
 
-\*\*Contributions Welcome
+Contribute
+Contributions are welcome! You can help by:
 
-1. Enhance responsiveness across devices.
+Enhancing responsiveness across devices.
 
-2. Add interactive features like modals, filters, or carts.
+Adding interactive features like modals, filters, or carts.
 
-3. Improve accessibility (ARIA, keyboard navigation).
+Improving accessibility (ARIA, keyboard navigation).
 
-4. Share optimized or annotated code for clarity and best practices.
+Sharing optimized or annotated code for clarity and best practices.
