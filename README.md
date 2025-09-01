@@ -78,24 +78,27 @@ For advanced features like form validation or future enhancements, you can run a
 
 Live Preview
 🚀 Experience Cara Online Shop directly here:
-👉
+
+👉 <a href=https://caraonlineshopbyshuvo.netlify.app> Cara online Fasion shop</a>
 
 Project Vision
-Cara aims to:
 
-Empower learners in front-end design and development.
+\*\* Cara aims to:
 
-Serve as a sleek foundation for full-fledged e-commerce features.
+1. Empower learners in front-end design and development.
 
-Showcase modern, user-friendly fashion website design standards.
+2. Serve as a sleek foundation for full-fledged e-commerce features.
 
-Contribute
+3. Showcase modern, user-friendly fashion website design standards.
+
+\*\*Contribute
+
 Contributions are welcome! You can help by:
 
-Enhancing responsiveness across devices.
+1. Enhancing responsiveness across devices.
 
-Adding interactive features like modals, filters, or carts.
+2. Adding interactive features like modals, filters, or carts.
 
-Improving accessibility (ARIA, keyboard navigation).
+3. Improving accessibility (ARIA, keyboard navigation).
 
-Sharing optimized or annotated code for clarity and best practices.
+4. Sharing optimized or annotated code for clarity and best practices.
